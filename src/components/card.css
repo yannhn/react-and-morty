@@ -47,6 +47,10 @@
   border-radius: 20px;
 }
 
+.card__attribute__background__hidden {
+  display: none;
+}
+
 .card__attribute {
   color: white;
   font-weight: bold;
