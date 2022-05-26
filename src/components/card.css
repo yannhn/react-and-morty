@@ -1,0 +1,64 @@
+.card__background {
+  background-color: #33b5e5;
+  margin: 4em auto;
+  padding: 3em;
+  width: 40vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.card__image {
+  border-radius: 50%;
+  width: 40%;
+  height: auto;
+  align-self: center;
+}
+
+.card__name {
+  color: white;
+  align-self: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.card__details {
+  background-color: #ff4444;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1em 2em;
+  align-self: center;
+  border-radius: 15px;
+  border: none;
+  transition: 0.6s ease;
+}
+
+.card__details:hover {
+  cursor: pointer;
+  background-color: #cc0000;
+}
+
+.card__attribute__background {
+  background-color: #0d47a1;
+  margin: 2em 1em 0 1em;
+  border-radius: 20px;
+}
+
+.card__attribute {
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0.6em;
+}
+
+.card__bookmark {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -0.8em;
+  right: 2em;
+}
