@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [persons, setPersons] = useState([]);
-
   useEffect(() => {
     const url = "https://rickandmortyapi.com/api/character/";
     fetchData(url);
@@ -39,15 +38,3 @@ function App() {
 }
 
 export default App;
-
-/*
-
-  return (
-    <div className="App">
-      <Header></Header>
-
-<Footer></Footer>
-    </div>
-  );
-
-*/
