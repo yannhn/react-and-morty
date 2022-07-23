@@ -1,7 +1,16 @@
 import "./card.css";
 import { useState } from "react";
 
-function Card({ name, image, status, species, type, gender }) {
+function Card({
+  name,
+  image,
+  status,
+  species,
+  type,
+  gender,
+  isBookmarked,
+  newBookmarks,
+}) {
   const [showDetails, setDetailsShown] = useState(false);
   return (
     <section className="card__background">
@@ -22,7 +31,13 @@ function Card({ name, image, status, species, type, gender }) {
         <p className="card__attribute">{showDetails ? gender : ""}</p>
         <p className="card__attribute">{showDetails ? type : ""}</p>
       </section>
-      <svg class="card__bookmark" viewBox="0 0 24 24">
+      <svg
+        class="card__bookmark"
+        viewBox="0 0 24 24"
+        onClick={() => {
+          newBookmarks(!isBookmarked);
+        }}
+      >
         <path d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" />
       </svg>
     </section>
@@ -30,3 +45,5 @@ function Card({ name, image, status, species, type, gender }) {
 }
 
 export { Card };
+
+// className={`isBookmarked ? "card__bookmark" : `}

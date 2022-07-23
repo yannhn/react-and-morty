@@ -41,12 +41,6 @@
   background-color: #cc0000;
 }
 
-.card__attribute__background {
-  background-color: #0d47a1;
-  margin: 2em 1em 0 1em;
-  border-radius: 20px;
-}
-
 .card__attribute__background__hidden {
   display: none;
 }
@@ -65,4 +59,14 @@
   position: absolute;
   top: -0.8em;
   right: 2em;
+  cursor: pointer;
+}
+
+.card__bookmark__active {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -0.8em;
+  right: 2em;
+  cursor: pointer;
 }
