@@ -1,4 +1,3 @@
-import "./App.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import { Card } from "./components/card";
@@ -37,7 +36,7 @@ function App() {
 
   return (
     <>
-      <Header></Header>;
+      <Header></Header>
       {characters.map((character) => {
         return (
           <Card
