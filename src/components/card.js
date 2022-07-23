@@ -1,5 +1,6 @@
 import "./card.css";
 import { useState } from "react";
+import { Icon } from "@iconify/react";
 
 function Card({
   name,
@@ -31,19 +32,33 @@ function Card({
         <p className="card__attribute">{showDetails ? gender : ""}</p>
         <p className="card__attribute">{showDetails ? type : ""}</p>
       </section>
-      <svg
-        class="card__bookmark"
-        viewBox="0 0 24 24"
-        onClick={() => {
-          newBookmarks(!isBookmarked);
-        }}
-      >
-        <path d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" />
-      </svg>
+      {isBookmarked ? (
+        <Icon
+          onClick={() => {
+            newBookmarks(!isBookmarked);
+          }}
+          className="bookmark-button"
+          icon="mdi:bookmark-minus"
+          width="1.6rem"
+          height="1.6rem"
+          color="#cc0000"
+          alt="show history"
+        />
+      ) : (
+        <Icon
+          onClick={() => {
+            newBookmarks(!isBookmarked);
+          }}
+          className="bookmark-button"
+          icon="mdi:bookmark-check"
+          width="1.6rem"
+          height="1.6rem"
+          color="black"
+          alt="show history"
+        />
+      )}
     </section>
   );
 }
 
 export { Card };
-
-// className={`isBookmarked ? "card__bookmark" : `}

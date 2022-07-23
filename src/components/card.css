@@ -53,20 +53,13 @@
   padding: 0.6em;
 }
 
-.card__bookmark {
+.bookmark-button {
+  border: none;
   width: 70px;
   height: 70px;
   position: absolute;
   top: -0.8em;
   right: 2em;
   cursor: pointer;
-}
-
-.card__bookmark__active {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  top: -0.8em;
-  right: 2em;
-  cursor: pointer;
+  background: none;
 }
