@@ -2,13 +2,19 @@
   background-color: #33b5e5;
   margin: 2em auto;
   padding: 2em;
-  width: 60vw;
+  width: 60%;
   height: auto;
   display: flex;
   flex-direction: column;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 30px;
   position: relative;
+}
+
+@media (min-width: 720px) {
+  .card__background {
+    width: 50%;
+  }
 }
 
 .card__image {
